@@ -11,6 +11,18 @@ html {
   scroll-behavior: smooth;
 }
 
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+}
+
 body {
   font-family: "Sarabun", sans-serif;
   font-size: 1.4rem;
@@ -675,7 +687,7 @@ h6 {
   height: 3.5rem;
 }
 
-.social-media-item > * {
+.social-media-item>* {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -720,4 +732,184 @@ h6 {
 
 .footer-content-body li {
   margin-bottom: 0.7rem;
+}
+
+@media only screen and (max-width: 1100px) {
+  .features-container {
+    padding: 5rem 2rem;
+  }
+
+  #infomap-image {
+    width: 80%
+  }
+
+  #geofencing-image {
+    width: 85%
+  }
+
+  .usecase {
+    margin: 7rem;
+  }
+
+  .section-usecases {
+    padding: 5rem 5rem;
+  }
+
+  .header-content {
+    width: 85%
+  }
+
+  .hero-heading {
+    font-size: 7.5rem;
+  }
+
+  .hero-subheading {
+    font-size: 2.5rem;
+  }
+
+  .button-hero {
+    font-size: 3rem;
+    padding: 1.5rem 6rem;
+  }
+
+  .section-info {
+    grid-column-gap: 3rem;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    grid-gap: 5rem;
+  }
+
+  .portfolio-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .portfolio-item-front,
+  .portfolio-item-back {
+    /* padding: 1rem; */
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .section {
+    padding: 5rem 5rem;
+  }
+
+  .features-container {
+    padding: 6rem 2rem
+  }
+
+  #middle-feature {
+    z-index: 9;
+    top: -5px;
+  }
+
+  .button-hero {
+    font-size: 2rem;
+    padding: 1rem 3rem;
+  }
+
+  .hero-subheading {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .header-content {
+    width: 86%;
+  }
+
+  .hero-heading {
+    font-size: 4rem
+  }
+
+  .header {
+    padding: 3rem;
+  }
+
+  .button-hero {
+    font-size: 2rem;
+    padding: 1rem 3rem;
+  }
+
+  .features-container {
+    flex-direction: column;
+    padding: 4rem 2rem;
+  }
+
+  .features-container>*:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  .feature {
+    width: 100%;
+  }
+
+  #middle-feature {
+    top: 0
+  }
+
+  .section-info {
+    grid-template-columns: 1fr;
+    grid-gap: 7rem;
+  }
+
+  #geofencing-image {
+    justify-self: center;
+    width: 100%;
+  }
+
+  #infomap-image {
+    width: 100%;
+    justify-self: center;
+    grid-row: 2/3;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+
+  .usecase-img {
+    display: none;
+  }
+
+  .contact-info,
+  .usecase,
+  .contact-mail,
+  .contact-info {
+    grid-template-columns: 1fr
+  }
+
+  .contact-info-address {
+    grid-column: 1/2
+  }
+
+
+  #message,
+  #email,
+  #subject,
+  #name {
+    grid-column: 1/3
+  }
+
+
+
+  .portfolio-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-info>*:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+
 }
